@@ -11,7 +11,7 @@ describe('Style Injection', () => {
     it("Injected classes should appear in style prop", () => {
         const wrapper = shallow(
             <NativeWind>
-                <Text nativewind="text-blue">Hello</Text>
+                <Text nativewind="text-blue">This is a Test</Text>
             </NativeWind>
         );
         const colorClass = config.colors["blue"];
