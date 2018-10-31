@@ -1,5 +1,6 @@
 import NativeWindComponent from '../nativewindcomponent';
 import sizes from '../sizes';
+import percents from '../percents';
 
 class Height extends NativeWindComponent {
     constructor() {
@@ -10,9 +11,16 @@ class Height extends NativeWindComponent {
         });
         this.attributes = [
             {
+                // unit height
                 name: 'height',
                 alias: 'h',
                 styles: sizes
+            },
+            {
+                // percent height
+                name: 'height',
+                alias: 'h',
+                styles: percents
             }
         ];
     }
