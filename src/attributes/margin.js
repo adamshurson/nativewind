@@ -13,6 +13,26 @@ class Margin extends NativeWindComponent {
                 name: 'margin',
                 alias: 'm',
                 styles: sizes
+            },
+            {
+                name: 'marginLeft',
+                alias: 'ml',
+                styles: sizes
+            },
+            {
+                name: 'marginRight',
+                alias: 'mr',
+                styles: sizes
+            },
+            {
+                name: 'marginTop',
+                alias: 'mt',
+                styles: sizes
+            },
+            {
+                name: 'marginBottom',
+                alias: 'mb',
+                styles: sizes
             }
         ];
     }
