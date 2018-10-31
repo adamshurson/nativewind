@@ -2,7 +2,7 @@
   "name": "nativewind",
   "main": "src/index.js",
   "release": {
-    "branch": "next"
+    "branch": "master"
   },
   "scripts": {
     "test": "jest",
