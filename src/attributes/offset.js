@@ -1,33 +1,48 @@
 import NativeWindComponent from '../nativewindcomponent';
-import sizes from '../sizes';
 
 class Offset extends NativeWindComponent {
     constructor() {
         super();
-        sizes.push({
-            name: 0,
-            value: 0
-        });
         this.attributes = [
             {
                 name: 'left',
-                alias: 'l',
-                styles: sizes
+                alias: 'pin',
+                styles: [
+                    {
+                        name: 'l',
+                        value: 0
+                    }
+                ]
             },
             {
                 name: 'right',
-                alias: 'r',
-                styles: sizes
+                alias: 'pin',
+                styles: [
+                    {
+                        name: 'r',
+                        value: 0
+                    }
+                ]
             },
             {
                 name: 'top',
-                alias: 't',
-                styles: sizes
+                alias: 'pin',
+                styles: [
+                    {
+                        name: 't',
+                        value: 0
+                    }
+                ]
             },
             {
                 name: 'bottom',
-                alias: 'b',
-                styles: sizes
+                alias: 'pin',
+                styles: [
+                    {
+                        name: 'b',
+                        value: 0
+                    }
+                ]
             }
         ];
     }

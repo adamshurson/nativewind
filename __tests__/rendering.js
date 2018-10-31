@@ -1,4 +1,4 @@
-import NativeWind from '../index';
+import NativeWind from '../src/index';
 import React from 'react';
 import { Text, View } from 'react-native';
 import { shallow, configure } from 'enzyme';
