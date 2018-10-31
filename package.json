@@ -5,7 +5,7 @@
     "branch": "master"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest __tests__ --collectCoverageFrom=**/__tests__/**/*.js",
     "semantic-release": "semantic-release"
   },
   "peerDependencies": {

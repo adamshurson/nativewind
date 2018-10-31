@@ -11,6 +11,7 @@ import height from './attributes/height';
 import width from './attributes/width';
 import display from './attributes/display';
 import shadow from './attributes/shadow';
+import opacity from './attributes/opacity';
 
 const styles = {};
 Object.assign(styles, flexbox);
@@ -26,5 +27,6 @@ Object.assign(styles, height);
 Object.assign(styles, width);
 Object.assign(styles, display);
 Object.assign(styles, shadow);
+Object.assign(styles, opacity);
 
 export default styles;
