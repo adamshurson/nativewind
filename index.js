@@ -19,12 +19,24 @@ export default class NativeWind extends React.Component {
     }
     mapProperties(child) {
         styles = [];
-        styles.push(child.props.style);
         child.props.nativewind.split(" ").map(nwClass => {
-            if (nwStyles.hasOwnProperty(nwClass) && nwStyles[nwClass].supportedBy.includes(child.type.name)) {
-                styles.push(nwStyles[nwClass].value);
+            if (nwStyles.hasOwnProperty(nwClass)) {
+                Object.keys(nwStyles[nwClass].value).map(prop => {
+                    if (typeof nwStyles[nwClass].value[prop] !== "object") {
+                        styles.push(nwStyles[nwClass].value);
+                    } else {
+                        Object.keys(nwStyles[nwClass].value[prop]).map(subProp => {
+                            const s = {};
+                            s[subProp] = nwStyles[nwClass].value[prop][subProp];
+                            styles.push(s);
+                        });
+                    }
+                });
             }
         });
+        if (child.props.style !== undefined) {
+            styles.push(child.props.style);
+        }
         return React.cloneElement(child, { style: styles });
     }
     render() {

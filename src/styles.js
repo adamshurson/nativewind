@@ -1,6 +1,30 @@
 import flexbox from './attributes/flexbox';
+import padding from './attributes/padding';
+import margin from './attributes/margin';
+import color from './attributes/color';
+import backgroundColor from './attributes/backgroundColor';
+import position from './attributes/position';
+import offset from './attributes/offset';
+import zIndex from './attributes/zIndex';
+import border from './attributes/border';
+import height from './attributes/height';
+import width from './attributes/width';
+import display from './attributes/display';
+import shadow from './attributes/shadow';
 
 const styles = {};
 Object.assign(styles, flexbox);
+Object.assign(styles, padding);
+Object.assign(styles, margin);
+Object.assign(styles, color);
+Object.assign(styles, backgroundColor);
+Object.assign(styles, position);
+Object.assign(styles, offset);
+Object.assign(styles, zIndex);
+Object.assign(styles, border);
+Object.assign(styles, height);
+Object.assign(styles, width);
+Object.assign(styles, display);
+Object.assign(styles, shadow);
 
 export default styles;

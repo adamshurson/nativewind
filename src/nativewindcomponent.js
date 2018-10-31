@@ -4,11 +4,14 @@ export default class NativeWindComponent {
         this.attributes.map(attr => {
             attr.styles.map(style => {
                 const newStyle = {
-                    value: {},
-                    supportedBy: this.supportedBy
+                    value: {}
                 };
                 newStyle.value[attr.name] = style.value;
-                styles[attr.alias + '-' + style.name] = newStyle;
+                if (style.overrideName === undefined) {
+                    styles[attr.alias + '-' + style.name] = newStyle;
+                } else {
+                    styles[style.overrideName] = newStyle;
+                }
             });
         });
         return styles;
