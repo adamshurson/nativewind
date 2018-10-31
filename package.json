@@ -1,7 +1,9 @@
 {
   "name": "nativewind",
   "main": "src/index.js",
-  "version": "0.0.0-development",
+  "release": {
+    "branch": "next"
+  },
   "scripts": {
     "test": "jest",
     "semantic-release": "semantic-release"
