@@ -17,22 +17,22 @@ class Padding extends NativeWindComponent {
             {
                 name: 'paddingLeft',
                 alias: 'pl',
-                styles: styles
+                styles: sizes
             },
             {
                 name: 'paddingRight',
                 alias: 'pr',
-                styles: styles
+                styles: sizes
             },
             {
                 name: 'paddingTop',
                 alias: 'pt',
-                styles: styles
+                styles: sizes
             },
             {
                 name: 'paddingBottom',
                 alias: 'pb',
-                styles: styles
+                styles: sizes
             }
         ];
     }
