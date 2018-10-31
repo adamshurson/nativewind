@@ -1,12 +1,8 @@
 {
-  "name": "empty-project-template",
-  "main": "node_modules/expo/AppEntry.js",
-  "private": true,
+  "name": "nativewind",
+  "main": "./index.js",
+  "version": "0.0.1",
   "scripts": {
-    "eject": "expo eject",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
     "test": "jest"
   },
   "dependencies": {
