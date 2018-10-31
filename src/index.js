@@ -1,5 +1,5 @@
 import React from "react";
-import nwStyles from './src/styles';
+import nwStyles from './styles';
 
 export default class NativeWind extends React.Component {
     constructor(props) {
