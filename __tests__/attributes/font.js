@@ -12,6 +12,6 @@ describe('Font', () => {
                 <Text nativewind="text-xl">Wow that was easy!</Text>
             </NativeWind>
         );
-        expect(wrapper.prop('style')[0].fontSize).toEqual(30);
+        expect(wrapper.prop('style')[0].fontSize).toEqual('30');
     });
 });
