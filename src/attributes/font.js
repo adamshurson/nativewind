@@ -10,19 +10,19 @@ class Font extends NativeWindComponent {
                 styles: [
                     {
                         name: 'sm',
-                        value: '12'
+                        value: 12
                     },
                     {
                         name: 'md',
-                        value: '16'
+                        value: 16
                     },
                     {
                         name: 'lg',
-                        value: '20'
+                        value: 20
                     },
                     {
                         name: 'xl',
-                        value: '30'
+                        value: 30
                     },
                 ]
             },
