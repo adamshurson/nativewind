@@ -27,16 +27,39 @@ class Border extends NativeWindComponent {
                 value: 12,
             }]);
         this.attributes = [
+            // Border Colors
             {
                 name: 'borderColor',
                 alias: 'border',
                 styles: colorClasses
             },
+            // Border Widths
             {
                 name: 'borderWidth',
                 alias: 'border',
                 styles: sizes
             },
+            {
+                name: 'borderTopWidth',
+                alias: 'border-t',
+                styles: sizes
+            },
+            {
+                name: 'borderRightWidth',
+                alias: 'border-r',
+                styles: sizes
+            },
+            {
+                name: 'borderBottomWidth',
+                alias: 'border-b',
+                styles: sizes
+            },
+            {
+                name: 'borderLeftWidth',
+                alias: 'border-l',
+                styles: sizes
+            },
+            // Border Radius
             {
                 name: 'borderRadius',
                 alias: 'rounded',
